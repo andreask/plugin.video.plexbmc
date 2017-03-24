@@ -12,7 +12,7 @@ class PlexSignin(pyxbmct.AddonFullWindow):
         # Call the base class' constructor.
         super(PlexSignin, self).__init__(title)
         # Set width, height and the grid parameters
-        self.setGeometry(600, 400, 6, 6)
+        self.setGeometry(800, 500, 6, 6)
         # Call set controls method
         self.set_controls()
         # Call set navigation method.
@@ -110,7 +110,7 @@ class PlexSignin(pyxbmct.AddonFullWindow):
         else:
             self.display_failure(False)
 
-        self.description.setText('From your computer, go to http://plex.tv/pin and enter the code below.  Then click done')
+        self.description.setText('From your computer, go to http://plex.tv/link and enter the code below.  Then click done')
         self.name_label.setVisible(False)
         self.password_label.setVisible(False)
         self.name_field.setVisible(False)
